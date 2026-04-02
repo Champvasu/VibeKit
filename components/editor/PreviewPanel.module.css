@@ -1,0 +1,34 @@
+.wrapper {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  /* subtle dot grid as background */
+  background-color: #07070d;
+  background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 22px 22px;
+  gap: 10px;
+}
+
+.deviceLabel {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.3);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.frame {
+  min-height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.07),
+    0 20px 60px rgba(0,0,0,0.7);
+  transition: width 0.3s cubic-bezier(0.16,1,0.3,1);
+  flex-shrink: 0;
+}
+
+.pageRoot { min-height: 100%; }

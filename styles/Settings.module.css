@@ -1,0 +1,69 @@
+.container {
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.cardSub { color: var(--text-2); font-size: 0.875rem; line-height: 1.6; }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.rowLabel { font-size: 0.875rem; color: var(--text-2); }
+.rowValue { font-size: 0.875rem; color: var(--text); }
+
+.badge {
+  padding: 3px 11px;
+  border-radius: 100px;
+  background: rgba(109,93,252,0.09);
+  border: 1px solid rgba(109,93,252,0.22);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Theme toggle row */
+.themeRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.themeLabel { font-size: 0.875rem; color: var(--text-2); margin-bottom: 3px; }
+.themeValue { font-size: 0.875rem; color: var(--text); font-weight: 500; }
+
+.toggleBtn {
+  padding: 8px 16px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s;
+  font-family: var(--font-body);
+}
+.toggleBtn:hover { background: var(--bg-glass-hover); border-color: var(--border-hover); }
