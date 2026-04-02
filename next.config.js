@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Allow images from external domains if needed later
+
+  // ✅ ADD THIS LINE (IMPORTANT)
+  output: 'export',
+
   images: {
     domains: [],
   },
-  // Useful headers for security
+
   async headers() {
     return [
       {
