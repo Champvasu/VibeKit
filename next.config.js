@@ -2,8 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  // ✅ ADD THIS LINE (IMPORTANT)
-  output: 'export',
+
 
   images: {
     domains: [],
